@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    # DATABASE
+    database: postgresql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      # DISABLE JPA VERSION EXCEPTION
+      hibernate.temp.use_jdbc_metadata_defaults: false
+    open-in-view: true
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/step_it_exam
+    username: postgres
+    password: admin
