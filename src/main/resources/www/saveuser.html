@@ -1,10 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Ajax-->
+
+    <!--My JavaScript-->
+    <script src="script.js"></script>
+    <!--My JavaScript-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap-grid.css">-->
+    <!--<link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap-reboot.css">-->
+    <!-- Bootstrap CSS -->
+
+    <!-- My SCC-->
+    <link rel="stylesheet" href="style.css">
+    <!-- My SCC-->
+
+
+
+    <!-- JS -->
+    <!--<script src="bootstrap-4.1.3/js/bootstrap.bundle.js"></script>-->
+    <!--<script src="bootstrap-4.1.3/js/bootstrap.js"></script>-->
+    <!-- JS -->
+
+    <!-- Required meta tags -->
+
+    <title>Save User</title>
 </head>
 <body>
-    $END$
+
+    <!-- HEADER -->
+    <div id="header">
+        <!-- NAV BAR -->
+        <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <button class="btn btn-outline-danger" type="button">Users.API</button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                <form action="index.html">
+                    <button class="btn btn-outline-danger" type="submit">All users</button>
+                </form>
+                <pre> </pre>
+                <form action="saveuser.html">
+                    <button class="btn btn-outline-danger" type="submit">User saving</button>
+                </form>
+                <pre> </pre>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- HEADER -->
+
+    <!-- CONTENT -->
+    <div id="content" class=" text-center pt-5 ">
+        <div class=" ml-auto mr-auto mb-3 col-3 input-group ">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="id" >ID</span>
+            </div>
+            <input type="text" id="id-inp" class="form-control" placeholder="ID" aria-label="id" aria-describedby="id">
+        </div>
+
+        <div class=" ml-auto mr-auto mb-3 col-6 input-group ">
+            <div class="  input-group-prepend">
+                <span class="input-group-text" id="name" >Name</span>
+            </div>
+            <input type="text" id="name-inp" class="form-control" placeholder="Name" aria-label="name" aria-describedby="name">
+        </div>
+
+        <div class=" ml-auto mr-auto mb-3 col-6 input-group ">
+            <div class=" input-group-prepend">
+                <span class="input-group-text" id="surname" >Surname</span>
+            </div>
+            <input type="text" id="surname-inp" class="form-control" placeholder="Surname" aria-label="surname"
+                   aria-describedby="surname">
+        </div>
+
+        <div class=" ml-auto mr-auto mb-3 col-6 input-group ">
+            <div class=" input-group-prepend">
+                <span class="input-group-text" id="email" >Email</span>
+            </div>
+            <input type="email" class="form-control" id="email-inp" placeholder="Email" aria-label="email" aria-describedby="email">
+        </div>
+
+        <div class=" ml-auto mr-auto mb-3 col-6 input-group ">
+            <div class="  input-group-prepend">
+                <span class="input-group-text" id="age" >Age</span>
+            </div>
+            <input type="text" id="age-inp" class="form-control" placeholder="Age" aria-label="age" aria-describedby="age">
+        </div>
+
+        <div class=" ml-auto mr-auto mb-3 col-5  ">
+            <span class=" mr-3 d-inline input-group-prepend col-2 input-group-text" >
+                <label ><input class="custom-radio mr-2 " type="radio" value="true" name="gender" >Male</label>
+            </span>
+            <span class=" ml-3 d-inline input-group-text input-group-prepend col-2">
+                <label ><input class="custom-radio mr-2 " type="radio" value="false" name="gender" >Female</label>
+            </span>
+        </div>
+
+        <button type="button" onclick="saveUser()" class="btn mb-5 mt-4 col-3 btn-primary btn-lg">Save User</button>
+
+
+
+    </div>
+    <!-- CONTENT -->
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+    </div>
+    <!-- FOOTER -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
+    <!--integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+    <!--crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"-->
+    <!--integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"-->
+    <!--crossorigin="anonymous"></script>-->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"-->
+    <!--integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"-->
+    <!--crossorigin="anonymous"></script>-->
 </body>
 </html>
